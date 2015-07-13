@@ -148,11 +148,11 @@ AC_ARG_ENABLE([debug],
 
 if test "x$enable_debug" = xyes; then
     if test "x$GCC" = xyes; then
-        CFLAGS="-g3 -O0 -DDEBUG"
+        CFLAGS="$CFLAGS -g3 -O0 -DDEBUG"
     fi
     
     if test "x$GXX" = xyes; then
-        CXXFLAGS="-g3 -O0 -DDEBUG"
+        CXXFLAGS="$CXXFLAGS -g3 -O0 -DDEBUG"
     fi
 fi 
 
